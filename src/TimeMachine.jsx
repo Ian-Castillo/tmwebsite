@@ -51,8 +51,10 @@ const TimeMachine = () => {
 
       {/* Footer section */}
       <footer>
-        <p className="signup-text">Sign up via e-mail for early access:</p>
-        <button className="submit-button">submit</button>
+        <div className="signup-form">
+          <input type="email" placeholder="Enter your email" className="email-input" />
+          <button className="submit-button">submit</button>
+        </div>
         <img src={tmLogo} alt="Time Machine Logo" className="tm-logo" />
       </footer>
     </div>
