@@ -1,17 +1,19 @@
 import React from 'react';
 import './TimeMachine.css';
+import heroImage from './assets/hero.svg';
+import tmLogo from './assets/tm.svg';
 
 const TimeMachine = () => {
   return (
     <div className="time-machine">
       {/* Header section */}
       <header>
-        <h1 className="logo">Time Machine</h1>
+        <img src={heroImage} alt="Hero" className="hero-image" />
+        <h1 className="heading">To go forward, go back.</h1>
       </header>
 
       {/* Main content section */}
       <main>
-        <h2 className="heading">To go forward, go back.</h2>
         <p className="description">
           For most of my life, I've been building and creating all types of things. I've
           launched startups, crafted brand identities, captured moments through my
@@ -51,6 +53,7 @@ const TimeMachine = () => {
       <footer>
         <p className="signup-text">Sign up via e-mail for early access:</p>
         <button className="submit-button">submit</button>
+        <img src={tmLogo} alt="Time Machine Logo" className="tm-logo" />
       </footer>
     </div>
   );

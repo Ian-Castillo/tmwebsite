@@ -1,10 +1,17 @@
-.time-machine {
+@font-face {
+    font-family: 'URW DIN';
+    src: url('./urw-din.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .time-machine {
     background-color: #000;
     color: #fff;
     padding: 40px;
-    font-family: Arial, sans-serif;
+    font-family: 'URW DIN', Arial, sans-serif;
   }
-  
+
   .logo {
     font-size: 24px;
     margin-bottom: 40px;
@@ -13,12 +20,15 @@
   .heading {
     font-size: 36px;
     margin-bottom: 20px;
+    text-align: left;
+
   }
   
   .description {
     font-size: 18px;
     line-height: 1.5;
     margin-bottom: 20px;
+    text-align: left;
   }
   
   .signup-text {
@@ -33,4 +43,19 @@
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+  }
+  /* ... Previous CSS code ... */
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+  
+  .tm-logo {
+    display: block;
+    margin: 40px auto 0;
+    max-width: 200px;
   }
